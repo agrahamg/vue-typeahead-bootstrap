@@ -1,4 +1,5 @@
 module.exports = {
+  base:'/vue-typeahead-bootstrap/',
   themeConfig: {
     nav: [
       {
