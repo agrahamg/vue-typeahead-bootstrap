@@ -12,7 +12,7 @@ jobs:
 
       - name: Build
         run: |
-          yarn install vuepress
+          yarn install
           yarn build:docs
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@releases/v3
