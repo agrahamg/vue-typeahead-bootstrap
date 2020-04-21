@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Getting Started</title>
+    <meta name="description" content="">
+    <meta name="generator" content="VuePress 1.4.0">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.cfc613bc.css" as="style"><link rel="preload" href="/assets/js/app.1a82343b.js" as="script"><link rel="preload" href="/assets/js/4.5f3413f5.js" as="script"><link rel="preload" href="/assets/js/13.fd6730e9.js" as="script"><link rel="prefetch" href="/assets/js/1.79c04806.js"><link rel="prefetch" href="/assets/js/10.a6e47415.js"><link rel="prefetch" href="/assets/js/11.1639d745.js"><link rel="prefetch" href="/assets/js/12.06afe572.js"><link rel="prefetch" href="/assets/js/14.3c25e1c2.js"><link rel="prefetch" href="/assets/js/15.90328cac.js"><link rel="prefetch" href="/assets/js/2.8fda1d4c.js"><link rel="prefetch" href="/assets/js/5.06a703f1.js"><link rel="prefetch" href="/assets/js/6.ad48d04a.js"><link rel="prefetch" href="/assets/js/7.db118193.js"><link rel="prefetch" href="/assets/js/8.9b6bc558.js"><link rel="prefetch" href="/assets/js/9.e4c144ad.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.cfc613bc.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/guide/gettingStarted.html" class="nav-link router-link-exact-active router-link-active">
+  Guide
+</a></div><div class="nav-item"><a href="/examples/examples.html" class="nav-link">
+  Examples
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/guide/gettingStarted.html" class="nav-link router-link-exact-active router-link-active">
+  Guide
+</a></div><div class="nav-item"><a href="/examples/examples.html" class="nav-link">
+  Examples
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/" class="sidebar-link">Home</a></li><li><a href="/guide/gettingStarted.html" class="active sidebar-link">Getting Started</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/guide/gettingStarted.html#installation" class="sidebar-link">Installation</a></li><li class="sidebar-sub-header"><a href="/guide/gettingStarted.html#registration" class="sidebar-link">Registration</a></li><li class="sidebar-sub-header"><a href="/guide/gettingStarted.html#basic-usage" class="sidebar-link">Basic Usage</a></li></ul></li><li><a href="/guide/reference.html" class="sidebar-link">Reference</a></li><li><a href="/examples/examples.html" class="sidebar-link">Examples</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="getting-started"><a href="#getting-started" class="header-anchor">#</a> Getting Started</h1> <h2 id="installation"><a href="#installation" class="header-anchor">#</a> Installation</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// yarn</span>
+yarn add vue<span class="token operator">-</span>typeahead<span class="token operator">-</span>bootstrap
+
+<span class="token comment">// npm</span>
+npm install vue<span class="token operator">-</span>typeahead<span class="token operator">-</span>bootstrap <span class="token operator">--</span>save
+</code></pre></div><h2 id="registration"><a href="#registration" class="header-anchor">#</a> Registration</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> VueTypeaheadBootstrap <span class="token keyword">from</span> <span class="token string">'vue-typeahead-bootstrap'</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Required dependency of bootstrap css/scss files</span>
+<span class="token keyword">import</span> <span class="token string">'bootstrap/scss/bootstrap.scss'</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Global registration</span>
+Vue<span class="token punctuation">.</span><span class="token function">component</span><span class="token punctuation">(</span><span class="token string">'vue-typeahead-bootstrap'</span><span class="token punctuation">,</span> VueTypeaheadBootstrap<span class="token punctuation">)</span>
+
+<span class="token comment">// or</span>
+
+<span class="token comment">// Local Registration</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  components<span class="token operator">:</span> <span class="token punctuation">{</span>
+    VueTypeaheadBootstrap
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="basic-usage"><a href="#basic-usage" class="header-anchor">#</a> Basic Usage</h2> <p>The only required props are a <code>v-model</code> and a <code>data</code> array.</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>vue-typeahead-bootstrap</span>
+  <span class="token attr-name">v-model</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>query<span class="token punctuation">&quot;</span></span>
+  <span class="token attr-name">:data</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>['Canada', 'United States', 'Mexico']<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">/&gt;</span></span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/" class="prev router-link-active">
+        Home
+      </a></span> <span class="next"><a href="/guide/reference.html">
+        Reference
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.1a82343b.js" defer></script><script src="/assets/js/4.5f3413f5.js" defer></script><script src="/assets/js/13.fd6730e9.js" defer></script>
+  </body>
+</html>
