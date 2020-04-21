@@ -32,7 +32,9 @@
     "test:unit": "vue-cli-service test:unit --coverage"
   },
   "dependencies": {
+    "global": "^4.4.0",
     "resize-observer-polyfill": "^1.5.0",
+    "serve": "^11.3.0",
     "vue": "^2.5.17"
   },
   "devDependencies": {
