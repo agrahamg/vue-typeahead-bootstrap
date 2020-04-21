@@ -13,7 +13,7 @@ jobs:
       - name: Build
         run: |
           yarn install
-          yarn build:docs
+          yarn docs:build
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
